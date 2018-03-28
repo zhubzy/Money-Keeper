@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39B24B6537E92D18AC57C879 /* Pods_Money_Keeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D51F3DBA26F7AA031BE978 /* Pods_Money_Keeper.framework */; };
+		5A0D19171F31370D00E5D03B /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D19161F31370D00E5D03B /* BankAccount.swift */; };
+		5A0D19191F31481000E5D03B /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D19181F31481000E5D03B /* SelectionView.swift */; };
+		5A0D191B1F314F9000E5D03B /* PickerLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D191A1F314F9000E5D03B /* PickerLauncher.swift */; };
+		5A0D191F1F315FFF00E5D03B /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D191E1F315FFF00E5D03B /* SettingCell.swift */; };
+		5A1ED81D1F0B299F00AFBB5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED81C1F0B299F00AFBB5D /* AppDelegate.swift */; };
+		5A1ED8221F0B299F00AFBB5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1ED8201F0B299F00AFBB5D /* Main.storyboard */; };
+		5A1ED8241F0B299F00AFBB5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1ED8231F0B299F00AFBB5D /* Assets.xcassets */; };
+		5A1ED8271F0B299F00AFBB5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1ED8251F0B299F00AFBB5D /* LaunchScreen.storyboard */; };
+		5A1ED82F1F0B2C0A00AFBB5D /* KeepAcountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED82E1F0B2C0A00AFBB5D /* KeepAcountViewController.swift */; };
+		5A1ED8311F0B2C4200AFBB5D /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED8301F0B2C4200AFBB5D /* SummaryViewController.swift */; };
+		5A1ED8331F0B2F9400AFBB5D /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED8321F0B2F9400AFBB5D /* Transaction.swift */; };
+		5A1ED84C1F0B8A8500AFBB5D /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED8361F0B8A8500AFBB5D /* IQNSArray+Sort.swift */; };
+		5A1ED84D1F0B8A8500AFBB5D /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED8371F0B8A8500AFBB5D /* IQUIScrollView+Additions.swift */; };
+		5A1ED84E1F0B8A8500AFBB5D /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED8381F0B8A8500AFBB5D /* IQUITextFieldView+Additions.swift */; };
+		5A1ED84F1F0B8A8500AFBB5D /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED8391F0B8A8500AFBB5D /* IQUIView+Hierarchy.swift */; };
+		5A1ED8501F0B8A8500AFBB5D /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED83A1F0B8A8500AFBB5D /* IQUIViewController+Additions.swift */; };
+		5A1ED8511F0B8A8500AFBB5D /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED83B1F0B8A8500AFBB5D /* IQUIWindow+Hierarchy.swift */; };
+		5A1ED8521F0B8A8500AFBB5D /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED83D1F0B8A8500AFBB5D /* IQKeyboardManagerConstants.swift */; };
+		5A1ED8531F0B8A8500AFBB5D /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED83E1F0B8A8500AFBB5D /* IQKeyboardManagerConstantsInternal.swift */; };
+		5A1ED8541F0B8A8500AFBB5D /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED83F1F0B8A8500AFBB5D /* IQKeyboardManager.swift */; };
+		5A1ED8551F0B8A8500AFBB5D /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED8411F0B8A8500AFBB5D /* IQKeyboardReturnKeyHandler.swift */; };
+		5A1ED8561F0B8A8500AFBB5D /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED8431F0B8A8500AFBB5D /* IQTextView.swift */; };
+		5A1ED8571F0B8A8500AFBB5D /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED8451F0B8A8500AFBB5D /* IQBarButtonItem.swift */; };
+		5A1ED8581F0B8A8500AFBB5D /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED8461F0B8A8500AFBB5D /* IQPreviousNextView.swift */; };
+		5A1ED8591F0B8A8500AFBB5D /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED8471F0B8A8500AFBB5D /* IQTitleBarButtonItem.swift */; };
+		5A1ED85A1F0B8A8500AFBB5D /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED8481F0B8A8500AFBB5D /* IQToolbar.swift */; };
+		5A1ED85B1F0B8A8500AFBB5D /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED8491F0B8A8500AFBB5D /* IQUIView+IQKeyboardToolbar.swift */; };
+		5A1ED85C1F0B8A8500AFBB5D /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5A1ED84B1F0B8A8500AFBB5D /* IQKeyboardManager.bundle */; };
+		5A55B0FB1F141C660001D569 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A55B0FA1F141C660001D569 /* CategoryViewController.swift */; };
+		5A55B0FD1F143A810001D569 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A55B0FC1F143A810001D569 /* ImagePickerView.swift */; };
+		5A5CA54C1F2049B8004CD865 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CA54B1F2049B8004CD865 /* TabBarViewController.swift */; };
+		5A95163E1F148E17002EBD7D /* OverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A95163D1F148E17002EBD7D /* OverViewController.swift */; };
+		5A9516401F14906C002EBD7D /* MoneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A95163F1F14906C002EBD7D /* MoneyModel.swift */; };
+		5ADE34841F3003B700FFE97E /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADE34831F3003B700FFE97E /* TransactionDetailViewController.swift */; };
+		5ADE34861F30136E00FFE97E /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADE34851F30136E00FFE97E /* EditViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04D51F3DBA26F7AA031BE978 /* Pods_Money_Keeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Money_Keeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B60F67A9E2E1DF904813BF2 /* Pods-Money Keeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Money Keeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Money Keeper/Pods-Money Keeper.debug.xcconfig"; sourceTree = "<group>"; };
+		5A0D19161F31370D00E5D03B /* BankAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		5A0D19181F31481000E5D03B /* SelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
+		5A0D191A1F314F9000E5D03B /* PickerLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerLauncher.swift; sourceTree = "<group>"; };
+		5A0D191E1F315FFF00E5D03B /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		5A1ED8191F0B299F00AFBB5D /* Money Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A1ED81C1F0B299F00AFBB5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A1ED8211F0B299F00AFBB5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A1ED8231F0B299F00AFBB5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A1ED8261F0B299F00AFBB5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A1ED8281F0B299F00AFBB5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A1ED82E1F0B2C0A00AFBB5D /* KeepAcountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeepAcountViewController.swift; sourceTree = "<group>"; };
+		5A1ED8301F0B2C4200AFBB5D /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		5A1ED8321F0B2F9400AFBB5D /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		5A1ED8361F0B8A8500AFBB5D /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		5A1ED8371F0B8A8500AFBB5D /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		5A1ED8381F0B8A8500AFBB5D /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		5A1ED8391F0B8A8500AFBB5D /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		5A1ED83A1F0B8A8500AFBB5D /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		5A1ED83B1F0B8A8500AFBB5D /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		5A1ED83D1F0B8A8500AFBB5D /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		5A1ED83E1F0B8A8500AFBB5D /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		5A1ED83F1F0B8A8500AFBB5D /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		5A1ED8401F0B8A8500AFBB5D /* IQKeyboardManagerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerSwift.h; sourceTree = "<group>"; };
+		5A1ED8411F0B8A8500AFBB5D /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		5A1ED8431F0B8A8500AFBB5D /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		5A1ED8451F0B8A8500AFBB5D /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		5A1ED8461F0B8A8500AFBB5D /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		5A1ED8471F0B8A8500AFBB5D /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		5A1ED8481F0B8A8500AFBB5D /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		5A1ED8491F0B8A8500AFBB5D /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		5A1ED84B1F0B8A8500AFBB5D /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		5A55B0FA1F141C660001D569 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		5A55B0FC1F143A810001D569 /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		5A5CA54B1F2049B8004CD865 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		5A95163D1F148E17002EBD7D /* OverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverViewController.swift; sourceTree = "<group>"; };
+		5A95163F1F14906C002EBD7D /* MoneyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyModel.swift; sourceTree = "<group>"; };
+		5ADE34831F3003B700FFE97E /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
+		5ADE34851F30136E00FFE97E /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditViewController.swift; path = ../EditViewController.swift; sourceTree = "<group>"; };
+		7516C66BB8F69B28F1E66337 /* Pods-Money Keeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Money Keeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Money Keeper/Pods-Money Keeper.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A1ED8161F0B299F00AFBB5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B24B6537E92D18AC57C879 /* Pods_Money_Keeper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		117DF96325B437FFB05291A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A1ED8341F0B8A8500AFBB5D /* IQKeyboardManagerSwift */,
+				04D51F3DBA26F7AA031BE978 /* Pods_Money_Keeper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46CC792514F57106B5F3A337 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B60F67A9E2E1DF904813BF2 /* Pods-Money Keeper.debug.xcconfig */,
+				7516C66BB8F69B28F1E66337 /* Pods-Money Keeper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A1ED8101F0B299F00AFBB5D = {
+			isa = PBXGroup;
+			children = (
+				5A1ED81B1F0B299F00AFBB5D /* Money Keeper */,
+				46CC792514F57106B5F3A337 /* Pods */,
+				117DF96325B437FFB05291A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A1ED81A1F0B299F00AFBB5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A1ED8191F0B299F00AFBB5D /* Money Keeper.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		5A1ED81B1F0B299F00AFBB5D /* Money Keeper */ = {
+			isa = PBXGroup;
+			children = (
+				5A5565F91F2A615D0036E66C /* Model */,
+				5A5565FA1F2A61640036E66C /* View */,
+				5A5565FB1F2A61700036E66C /* Controller */,
+				5A5565FC1F2A61C20036E66C /* Supporting Files */,
+			);
+			path = "Money Keeper";
+			sourceTree = "<group>";
+		};
+		5A1ED8341F0B8A8500AFBB5D /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				5A1ED8351F0B8A8500AFBB5D /* Categories */,
+				5A1ED83C1F0B8A8500AFBB5D /* Constants */,
+				5A1ED83F1F0B8A8500AFBB5D /* IQKeyboardManager.swift */,
+				5A1ED8401F0B8A8500AFBB5D /* IQKeyboardManagerSwift.h */,
+				5A1ED8411F0B8A8500AFBB5D /* IQKeyboardReturnKeyHandler.swift */,
+				5A1ED8421F0B8A8500AFBB5D /* IQTextView */,
+				5A1ED8441F0B8A8500AFBB5D /* IQToolbar */,
+				5A1ED84A1F0B8A8500AFBB5D /* Resources */,
+			);
+			name = IQKeyboardManagerSwift;
+			path = "Money Keeper/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		5A1ED8351F0B8A8500AFBB5D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5A1ED8361F0B8A8500AFBB5D /* IQNSArray+Sort.swift */,
+				5A1ED8371F0B8A8500AFBB5D /* IQUIScrollView+Additions.swift */,
+				5A1ED8381F0B8A8500AFBB5D /* IQUITextFieldView+Additions.swift */,
+				5A1ED8391F0B8A8500AFBB5D /* IQUIView+Hierarchy.swift */,
+				5A1ED83A1F0B8A8500AFBB5D /* IQUIViewController+Additions.swift */,
+				5A1ED83B1F0B8A8500AFBB5D /* IQUIWindow+Hierarchy.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		5A1ED83C1F0B8A8500AFBB5D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5A1ED83D1F0B8A8500AFBB5D /* IQKeyboardManagerConstants.swift */,
+				5A1ED83E1F0B8A8500AFBB5D /* IQKeyboardManagerConstantsInternal.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		5A1ED8421F0B8A8500AFBB5D /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				5A1ED8431F0B8A8500AFBB5D /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		5A1ED8441F0B8A8500AFBB5D /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				5A1ED8451F0B8A8500AFBB5D /* IQBarButtonItem.swift */,
+				5A1ED8461F0B8A8500AFBB5D /* IQPreviousNextView.swift */,
+				5A1ED8471F0B8A8500AFBB5D /* IQTitleBarButtonItem.swift */,
+				5A1ED8481F0B8A8500AFBB5D /* IQToolbar.swift */,
+				5A1ED8491F0B8A8500AFBB5D /* IQUIView+IQKeyboardToolbar.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		5A1ED84A1F0B8A8500AFBB5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A1ED84B1F0B8A8500AFBB5D /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5A5565F91F2A615D0036E66C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A1ED8321F0B2F9400AFBB5D /* Transaction.swift */,
+				5A95163F1F14906C002EBD7D /* MoneyModel.swift */,
+				5A0D19161F31370D00E5D03B /* BankAccount.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5A5565FA1F2A61640036E66C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A55B0FC1F143A810001D569 /* ImagePickerView.swift */,
+				5A0D19181F31481000E5D03B /* SelectionView.swift */,
+				5A0D191E1F315FFF00E5D03B /* SettingCell.swift */,
+				5A1ED8201F0B299F00AFBB5D /* Main.storyboard */,
+				5A1ED8231F0B299F00AFBB5D /* Assets.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5A5565FB1F2A61700036E66C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5A0D191A1F314F9000E5D03B /* PickerLauncher.swift */,
+				5ADE34851F30136E00FFE97E /* EditViewController.swift */,
+				5ADE34831F3003B700FFE97E /* TransactionDetailViewController.swift */,
+				5A5CA54B1F2049B8004CD865 /* TabBarViewController.swift */,
+				5A1ED82E1F0B2C0A00AFBB5D /* KeepAcountViewController.swift */,
+				5A95163D1F148E17002EBD7D /* OverViewController.swift */,
+				5A55B0FA1F141C660001D569 /* CategoryViewController.swift */,
+				5A1ED8301F0B2C4200AFBB5D /* SummaryViewController.swift */,
+				5A1ED81C1F0B299F00AFBB5D /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5A5565FC1F2A61C20036E66C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A1ED81A1F0B299F00AFBB5D /* Products */,
+				5A1ED8251F0B299F00AFBB5D /* LaunchScreen.storyboard */,
+				5A1ED8281F0B299F00AFBB5D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A1ED8181F0B299F00AFBB5D /* Money Keeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A1ED82B1F0B299F00AFBB5D /* Build configuration list for PBXNativeTarget "Money Keeper" */;
+			buildPhases = (
+				CAD3F0A128ACD5700513A0D4 /* [CP] Check Pods Manifest.lock */,
+				5A1ED8151F0B299F00AFBB5D /* Sources */,
+				5A1ED8161F0B299F00AFBB5D /* Frameworks */,
+				5A1ED8171F0B299F00AFBB5D /* Resources */,
+				1CB8EE3481D42F52EE1D213A /* [CP] Embed Pods Frameworks */,
+				B819262A4940DAA107216D04 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Money Keeper";
+			productName = "Money Keeper";
+			productReference = 5A1ED8191F0B299F00AFBB5D /* Money Keeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A1ED8111F0B299F00AFBB5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Zach Zhong";
+				TargetAttributes = {
+					5A1ED8181F0B299F00AFBB5D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4W7FJ652MW;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5A1ED8141F0B299F00AFBB5D /* Build configuration list for PBXProject "Money Keeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A1ED8101F0B299F00AFBB5D;
+			productRefGroup = 5A1ED81A1F0B299F00AFBB5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A1ED8181F0B299F00AFBB5D /* Money Keeper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A1ED8171F0B299F00AFBB5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A1ED8271F0B299F00AFBB5D /* LaunchScreen.storyboard in Resources */,
+				5A1ED8241F0B299F00AFBB5D /* Assets.xcassets in Resources */,
+				5A1ED85C1F0B8A8500AFBB5D /* IQKeyboardManager.bundle in Resources */,
+				5A1ED8221F0B299F00AFBB5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CB8EE3481D42F52EE1D213A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Money Keeper/Pods-Money Keeper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B819262A4940DAA107216D04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Money Keeper/Pods-Money Keeper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAD3F0A128ACD5700513A0D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A1ED8151F0B299F00AFBB5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A1ED85B1F0B8A8500AFBB5D /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				5A55B0FD1F143A810001D569 /* ImagePickerView.swift in Sources */,
+				5A1ED82F1F0B2C0A00AFBB5D /* KeepAcountViewController.swift in Sources */,
+				5A1ED8501F0B8A8500AFBB5D /* IQUIViewController+Additions.swift in Sources */,
+				5A9516401F14906C002EBD7D /* MoneyModel.swift in Sources */,
+				5A0D191B1F314F9000E5D03B /* PickerLauncher.swift in Sources */,
+				5A0D19171F31370D00E5D03B /* BankAccount.swift in Sources */,
+				5A1ED85A1F0B8A8500AFBB5D /* IQToolbar.swift in Sources */,
+				5A95163E1F148E17002EBD7D /* OverViewController.swift in Sources */,
+				5A1ED8571F0B8A8500AFBB5D /* IQBarButtonItem.swift in Sources */,
+				5A1ED8591F0B8A8500AFBB5D /* IQTitleBarButtonItem.swift in Sources */,
+				5A5CA54C1F2049B8004CD865 /* TabBarViewController.swift in Sources */,
+				5A1ED84C1F0B8A8500AFBB5D /* IQNSArray+Sort.swift in Sources */,
+				5A1ED8521F0B8A8500AFBB5D /* IQKeyboardManagerConstants.swift in Sources */,
+				5A1ED8561F0B8A8500AFBB5D /* IQTextView.swift in Sources */,
+				5A1ED81D1F0B299F00AFBB5D /* AppDelegate.swift in Sources */,
+				5A1ED8541F0B8A8500AFBB5D /* IQKeyboardManager.swift in Sources */,
+				5A1ED8511F0B8A8500AFBB5D /* IQUIWindow+Hierarchy.swift in Sources */,
+				5A1ED84F1F0B8A8500AFBB5D /* IQUIView+Hierarchy.swift in Sources */,
+				5A1ED8311F0B2C4200AFBB5D /* SummaryViewController.swift in Sources */,
+				5A1ED84D1F0B8A8500AFBB5D /* IQUIScrollView+Additions.swift in Sources */,
+				5A1ED8551F0B8A8500AFBB5D /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				5A1ED8581F0B8A8500AFBB5D /* IQPreviousNextView.swift in Sources */,
+				5A1ED84E1F0B8A8500AFBB5D /* IQUITextFieldView+Additions.swift in Sources */,
+				5A0D191F1F315FFF00E5D03B /* SettingCell.swift in Sources */,
+				5ADE34841F3003B700FFE97E /* TransactionDetailViewController.swift in Sources */,
+				5A1ED8531F0B8A8500AFBB5D /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				5A55B0FB1F141C660001D569 /* CategoryViewController.swift in Sources */,
+				5A0D19191F31481000E5D03B /* SelectionView.swift in Sources */,
+				5A1ED8331F0B2F9400AFBB5D /* Transaction.swift in Sources */,
+				5ADE34861F30136E00FFE97E /* EditViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A1ED8201F0B299F00AFBB5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A1ED8211F0B299F00AFBB5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A1ED8251F0B299F00AFBB5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A1ED8261F0B299F00AFBB5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A1ED8291F0B299F00AFBB5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A1ED82A1F0B299F00AFBB5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A1ED82C1F0B299F00AFBB5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B60F67A9E2E1DF904813BF2 /* Pods-Money Keeper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4W7FJ652MW;
+				INFOPLIST_FILE = "Money Keeper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HackWithZach.Money-Keeper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5A1ED82D1F0B299F00AFBB5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7516C66BB8F69B28F1E66337 /* Pods-Money Keeper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4W7FJ652MW;
+				INFOPLIST_FILE = "Money Keeper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HackWithZach.Money-Keeper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A1ED8141F0B299F00AFBB5D /* Build configuration list for PBXProject "Money Keeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A1ED8291F0B299F00AFBB5D /* Debug */,
+				5A1ED82A1F0B299F00AFBB5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A1ED82B1F0B299F00AFBB5D /* Build configuration list for PBXNativeTarget "Money Keeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A1ED82C1F0B299F00AFBB5D /* Debug */,
+				5A1ED82D1F0B299F00AFBB5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A1ED8111F0B299F00AFBB5D /* Project object */;
+}
